@@ -154,7 +154,7 @@ body {
   color: navy;
 
 
-  width: 100%;
+  width: 70%;
   height: fit-content;
 
   .tec-skills {
@@ -170,7 +170,7 @@ body {
 
     border: 3px solid navy;
     padding: 80px;
-    border-radius: 50%;
+    border-radius: 60%;
 
     ul {
       list-style: none;
@@ -191,7 +191,7 @@ body {
 
     border: 3px solid navy;
     padding: 100px;
-    border-radius: 50%;
+    border-radius: 60%;
 
     ul {
       list-style: none;
