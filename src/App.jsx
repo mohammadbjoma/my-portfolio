@@ -3,7 +3,7 @@ import Projects from "./components/Project.jsx";
 
 const skills = {
   technical: [
-    "Programming Languages: C, C++, Java, JavaScript, Python",
+    "Programming Languages: Java, JavaScript, Python",
     "Web Development: HTML, CSS, React",
     "Databases: MySQL, PostgreSQL",
     "Object-Oriented Programming (OOP)",
