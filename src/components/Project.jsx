@@ -7,6 +7,7 @@ const projects = [
       "A clinic management system that enables online appointments and unifies all clinic sections for efficient patient care.",
     image: "/img&icon/Screenshot (1).png",
     tags: ["HTML", "CSS", "PHP", "MySQL"],
+    
   },
   {
     title: "Inventory Management System",
@@ -14,6 +15,7 @@ const projects = [
       "Full-stack inventory platform built with Django and JavaScript, featuring authentication, CRUD workflows, and a Wordle-style game, deployed on AWS EC2.",
     image: "/img&icon/inventory-managment-system.PNG",
     tags: ["HTML", "CSS", "JavaScript", "Python", "SQLite"],
+    url: "http://3.227.211.218/",
   },
   {
     title: "Ticketing System",
@@ -21,6 +23,7 @@ const projects = [
       "Django-based ticketing system that lets users create, view, and manage support tickets with a polished UI.",
     image: "/img&icon/Ticketing-System.PNG",
     tags: ["HTML", "CSS", "JavaScript", "Python", "MySQL"],
+    url: "http://98.92.112.91",
   },
 ];
 
@@ -81,15 +84,28 @@ export default function Projects() {
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
               </div>
-              <div className="project-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-              </div>
+             <div className="project-content">
+  <h3>{project.title}</h3>
+  <p>{project.description}</p>
+
+  <div className="project-tags">
+    {project.tags.map((tag) => (
+      <span key={tag}>{tag}</span>
+    ))}
+  </div>
+
+  {project.url && (
+    <a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="visit-btn"
+    >
+      Visit Website →
+    </a>
+  )}
+</div>
+
             </article>
           ))}
         </div>
