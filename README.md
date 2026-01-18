@@ -1,2 +1,10 @@
 # my-portfolio
-a profile describes all information about me 
+
+A React-based portfolio site for Mohammad Joma showcasing skills, projects, and contact details.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
