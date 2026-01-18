@@ -133,8 +133,8 @@ export default function App() {
             <h2>My Skills</h2>
             <p>Balanced technical depth with strong collaboration skills.</p>
           </div>
-          <div className="skills-grid">
-            <article className="skill-card">
+          <div className="skills-circles">
+            <article className="skill-circle skill-circle--tech">
               <h3>Technical Skills</h3>
               <ul>
                 {skills.technical.map((item) => (
@@ -142,18 +142,18 @@ export default function App() {
                 ))}
               </ul>
             </article>
-            <article className="skill-card">
-              <h3>Soft Skills</h3>
+            <article className="skill-circle skill-circle--both">
+              <h3>Both</h3>
               <ul>
-                {skills.soft.map((item) => (
+                {skills.blended.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
             </article>
-            <article className="skill-card">
-              <h3>Both</h3>
+            <article className="skill-circle skill-circle--soft">
+              <h3>Soft Skills</h3>
               <ul>
-                {skills.blended.map((item) => (
+                {skills.soft.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
@@ -177,33 +177,48 @@ export default function App() {
               solutions.
             </p>
           </div>
-          <form
-            className="contact-form"
-            action="mailto:engmohamadjoma@gmail.com"
-            method="post"
-            encType="text/plain"
-          >
-            <label>
-              Your Name
-              <input type="text" name="name" placeholder="Your Name" required />
-            </label>
-            <label>
-              Your Email
-              <input type="email" name="email" placeholder="Your Email" required />
-            </label>
-            <label>
-              Your Message
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="4"
-                required
-              />
-            </label>
-            <button className="btn primary" type="submit">
-              Send Message
-            </button>
-          </form>
+          <div className="contact-ring">
+            <span />
+            <span />
+            <span />
+            <form
+              className="contact-form"
+              action="mailto:engmohamadjoma@gmail.com"
+              method="post"
+              encType="text/plain"
+            >
+              <label>
+                Your Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </label>
+              <label>
+                Your Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </label>
+              <label>
+                Your Message
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  required
+                />
+              </label>
+              <button className="btn primary" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
           <div className="social-links">
             <a
               className="social-card"
@@ -212,7 +227,6 @@ export default function App() {
               rel="noreferrer"
             >
               <img src="/img&icon/linked in icon.png" alt="LinkedIn" />
-              <span>LinkedIn</span>
             </a>
             <a
               className="social-card"
@@ -221,7 +235,6 @@ export default function App() {
               rel="noreferrer"
             >
               <img src="/img&icon/githubicon.png" alt="GitHub" />
-              <span>GitHub</span>
             </a>
           </div>
         </section>
