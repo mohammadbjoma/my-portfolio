@@ -419,11 +419,25 @@ section {
   padding: 32px;
 }
 
-.project-image img {
-  border-radius: 20px;
-  height: 100%;
-  object-fit: cover;
+.project-image {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;        /* 👈 rounded container */
+  background: #0f172a;        /* optional dark bg */
 }
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* 👈 shows full image */
+  border-radius: 12px;        /* 👈 smooth image corners */
+}
+
+
 
 .project-content h3 {
   margin-bottom: 12px;

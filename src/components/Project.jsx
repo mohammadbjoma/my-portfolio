@@ -7,7 +7,7 @@ const projects = [
       "A clinic management system that enables online appointments and unifies all clinic sections for efficient patient care.",
     image: "/img&icon/Screenshot (1).png",
     tags: ["HTML", "CSS", "PHP", "MySQL"],
-    
+
   },
   {
     title: "Inventory Management System",
@@ -25,6 +25,15 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Python", "MySQL"],
     url: "http://98.92.112.91",
   },
+  {
+    title: "Weather Forecast App",
+    description:
+      "Responsive weather application built with React and Vite, featuring real-time weather data, multi-language support (EN/AR), and 7-day forecasts using Weatherbit API.",
+    image: "/img&icon/WeatherApp.png",
+    tags: ["React", "JavaScript", "Vite", "API"],
+    url: "https://github.com/mohammadbjoma/weather-website",
+  },
+
 ];
 
 export default function Projects() {
@@ -82,29 +91,34 @@ export default function Projects() {
           {slides.map((project) => (
             <article className="project-card" key={project.id}>
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+            <img
+  src={project.image}
+  alt={project.title}
+  className="project-img"
+/>
+
               </div>
-             <div className="project-content">
-  <h3>{project.title}</h3>
-  <p>{project.description}</p>
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
 
-  <div className="project-tags">
-    {project.tags.map((tag) => (
-      <span key={tag}>{tag}</span>
-    ))}
-  </div>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
 
-  {project.url && (
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="visit-btn"
-    >
-      Visit Website →
-    </a>
-  )}
-</div>
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="visit-btn"
+                  >
+                    Visit Website →
+                  </a>
+                )}
+              </div>
 
             </article>
           ))}
