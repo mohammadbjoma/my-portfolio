@@ -1,25 +1,72 @@
-🚀 Portfolio
+# 🚀 My Portfolio — React Developer
 
-This portfolio website is built using React and modern frontend tools to ensure high performance, scalability, and a smooth user experience.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![CSS](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)
+![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-black?logo=github)
+![Status](https://img.shields.io/badge/Status-Live-success)
 
-🛠️ Tech Stack
+🔗 **Live Demo:**  
+https://mohammadbjoma.github.io/my-portfolio/
 
-React.js – Component-based UI development
+---
 
-Vite – Fast build tool and development server
+## 🧠 About The Project
 
-HTML5 & CSS3 – Structure and styling
+This is my **personal portfolio website** built using **React + Vite**.  
+It showcases my **skills, projects, and experience** in a clean and modern design.
 
-JavaScript (ES6+) – Application logic
+This portfolio is built to:
+- Present my technical skills
+- Showcase my projects
+- Help with job applications
+- Demonstrate React development skills
 
-✨ Features
+---
 
-Responsive and modern design
+## ⚙️ Tech Stack
 
-Clean and structured codebase
+### 🚀 Frontend
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
 
-Showcases projects, skills, and experience
+### 🛠 Tools
+- Git & GitHub
+- GitHub Pages
+- VS Code
 
-Optimized for performance and fast loading
+---
 
-📌 This portfolio reflects my ability to build scalable front-end applications and adapt quickly to any tech stack or framework.
+## ✨ Features
+
+- Responsive design
+- Built with React + Vite
+- Clean UI & structure
+- Reusable components
+- Fast performance
+- Easy to maintain
+- Live deployment
+
+---
+
+## 📁 Project Structure
+
+```text
+my-portfolio/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
